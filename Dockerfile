@@ -7,7 +7,7 @@ RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:kubuntu-ppa/backports
 RUN add-apt-repository -y ppa:ubuntu-toolchain-r/test
 RUN apt-get update
-RUN apt-get install -y make gcc-4.9 g++-4.9 xorg-dev libglu1-mesa-dev git curl
+RUN apt-get install -y make gcc-4.9 g++-4.9 git curl
 
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 80
 RUN update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 80
