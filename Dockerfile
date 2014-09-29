@@ -23,3 +23,4 @@ WORKDIR cmake-3.0.2
 RUN ./bootstrap \
         && make \
         && make install
+RUN locale-gen en_US.UTF-8 
