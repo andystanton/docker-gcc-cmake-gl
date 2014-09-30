@@ -4,7 +4,7 @@ RUN         apt-get update \
                 && apt-get install -y \
                     software-properties-common \
                     wget \
-                && echo 'deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.5 main' >> /etc/apt/sources.list \
+                && echo 'deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.4 main' >> /etc/apt/sources.list \
                 && wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add - \
                 && add-apt-repository -y ppa:ubuntu-toolchain-r/test \
                 && apt-get update \
@@ -21,7 +21,7 @@ RUN         apt-get update \
                     gcc-4.8 g++-4.8 gcc-4.8-base \
                     gcc-4.7 g++-4.7 gcc-4.7-base \
                     gcc-4.6 g++-4.6 gcc-4.6-base \
-                    clang-3.5
+                    clang-3.4 \
                 && gem install rake \
                 && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 100 \
                 && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 100
