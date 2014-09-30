@@ -18,15 +18,6 @@ RUN apt-get update \
             gcc-4.6 \
             g++-4.6 \
             gcc-4.6-base \
-            gcc-4.5 \
-            g++-4.5 \
-            gcc-4.5-base \
-            gcc-4.4 \
-            g++-4.4 \
-            gcc-4.4-base \
-            gcc-4.3 \
-            g++-4.3 \
-            gcc-4.3-base \
             git \
             curl \
             ruby \
