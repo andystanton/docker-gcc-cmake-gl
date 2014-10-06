@@ -1,4 +1,4 @@
-# Docker Image: gcc-cmake-gl
+# Docker Container: gcc-cmake-gl
 
 A bleeding edge Ubuntu 14.04 image for compiling C++11 OpenGL projects.
 
